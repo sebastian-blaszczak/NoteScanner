@@ -13,7 +13,9 @@ public class Interpreter {
     public String getInformation() {
         String result = "";
         for (String line : linesOfFiles) {
-            if (line.contains(information)) {
+            if (line.contains(information) && line.contains("Tags")) {
+                continue;
+            } else if (line.contains(information)) {
                 result += line;
             }
         }
