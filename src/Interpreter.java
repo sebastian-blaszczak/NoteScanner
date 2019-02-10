@@ -1,16 +1,9 @@
 import java.util.List;
 
-public class Interpreter {
+class Interpreter {
 
-    private final List<String> linesOfFiles;
-    private final String information;
 
-    public Interpreter(List<String> linesOfFiles, String information) {
-        this.linesOfFiles = linesOfFiles;
-        this.information = information;
-    }
-
-    public String getInformation() {
+    static String getInformation(String information, List<String> linesOfFiles) {
         String result = "";
         for (String line : linesOfFiles) {
             if (line.contains(information) && line.contains("Tags")) {

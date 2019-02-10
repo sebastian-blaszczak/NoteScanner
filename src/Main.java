@@ -1,17 +1,22 @@
 import java.io.File;
 import java.util.List;
+import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
 
-        FileLoad fileLoad = new FileLoad("/home/shaders/SDA_Learning/Java/JavaNotes");
+        System.out.println("Welcome to file scanner of SDA Notes!");
 
-        List<File> files = fileLoad.loadFiles();
+        List<File> files = FileLoad.loadFiles("/home/shaders/SDA_Learning/Java/JavaNotes");
+        List<String> fileToString = FileLoad.readFiles(files);
 
-        List<String> fileToString = fileLoad.readFiles();
+        Scanner scanner = new Scanner(System.in);
 
-        Interpreter interpreter = new Interpreter(fileToString,"goodPractice");
+        System.out.println("Implemented topics -> book news intellij goodPractice interview");
+        System.out.println("Please provide topic:");
 
-        System.out.println(interpreter.getInformation());
+        String input = scanner.next();
+
+        System.out.println(Interpreter.getInformation(input,fileToString));
     }
 }

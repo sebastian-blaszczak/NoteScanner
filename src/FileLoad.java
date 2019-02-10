@@ -6,24 +6,14 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-public class FileLoad {
-
-    private final String path;
-
-    private List<File> files = new ArrayList<>();
-
-    public FileLoad(String path) {
-        this.path = path;
-    }
+final class FileLoad {   // to utils classes better use final
 
 
-    public String getPath() {
-        return path;
-    }
-
-    public List<File> loadFiles() {
+    static List<File> loadFiles(String path) {
         File folder = new File(path);
         File[] listOfFiles = folder.listFiles();
+
+        List<File> files = new ArrayList<>();
 
         for (File file : listOfFiles) {
             if (file.isFile()) {
@@ -33,24 +23,24 @@ public class FileLoad {
         return files;
     }
 
-    public List<String> readFiles() {
+    static List<String> readFiles(List<File> files) {
         if (files.size() == 0) {
             return Collections.emptyList();
         }
 
         List<String> filesToStrings = new ArrayList<>();
         for (File file : files) {
-            String wholeFile = "";
+            StringBuilder wholeFile = new StringBuilder();
             try {
                 java.io.FileReader fileReader = new java.io.FileReader(file.getPath());
                 BufferedReader bufferedReader = new BufferedReader(fileReader);
                 String line = "";
 
-                while ((line=bufferedReader.readLine()) != null){
-                    wholeFile+=line+"\n";
-                    if(line.equals("")){
-                        filesToStrings.add(wholeFile);
-                        wholeFile=new String();
+                while ((line = bufferedReader.readLine()) != null) {
+                    wholeFile.append(line).append("\n");
+                    if (line.equals("")) {
+                        filesToStrings.add(wholeFile.toString());
+                        wholeFile = new StringBuilder();
                     }
                 }
 
