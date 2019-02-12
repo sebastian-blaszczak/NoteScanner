@@ -1,0 +1,13 @@
+﻿Tags:goodPractice, interview
+
+Lekcja 2 – 27.01;
+
+goodPractice:
+• Nie powinno się używać break/continue w pętlach
+• if powinno się pisać zawsze z klamerkami
+• najlepiej robić max 2 else ify
+
+interview:
+• zadanie z pętli (mogą być wszystkie)
+• fizzbuzz na rozmowach
+

@@ -1,0 +1,26 @@
+﻿Tags:news,intellij,interview,goodPractice
+
+Lekcja 4 – 03.02;
+
+news:
+• Zamiast Date używamy LocalDate
+• Przy listach jak sprawdzamy, czy jest pusta możemy użyć Collections.emptyList();
+• instanceOf sprawdza, czy obiekt jest danego typu
+• Kompozycja – cos musi istnieć z czymś
+• Abstrakcyjna klasa – nie można tworzyc przez konstruktor trzyma wspolne elementy dla roznych klas, nie można tworzyć obiektów
+• Agregacja – nie musi z czymś istnieć
+• Intefejs – będzie miało metody bez implementacji
+• final – nie będzie można dziedziczyc po tej classie
+• Intefeace są po to zeby uogolnic, bo np. nie wiemy co będzie w runtime, więc w zależności od tego będzie wybrana implementacja.
+
+inteliij:
+• alt+enter - create setter and geters,construtor...
+• alt+insert – generate
+• ctrl+alt+c – change to static value
+
+interview:
+• pytanie o hash code – czemu equals i hash code są ze sobą powiązane – jeżeli equals zwraca true to hash code tez zwraca true, ale jeśli hash code dla obu zwraca true nie musi być equals, hash code to referencja do pamięci gdzie został zalokowany obiekt, hash code może być taki sam, ale obiekty nie muszą być np.tego samego typu (Employee/Menager)
+
+goodPractice:
+• equal hashode to string – override na końcu zawsze
+

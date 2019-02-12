@@ -1,0 +1,24 @@
+﻿Tags:news,goodPractice,interview,intellij
+
+Lekcja 6 – 10.02;
+
+news:
+• klasy anonimowe – implementacja metod przy tworzeniu obiektu, najczęściej implementacja interfejsów
+• typy generyczne
+• java user grup – youtube
+• jinkubator – youtube
+• kowariancja typów generyczny – do poczytania
+• … to tablica
+• obsługa wyjątków – do poczytania
+• finally – wykonuje się zawsze nawet jak będzie wyjątek
+• try with resorces – jak będzie wyjątek to gdy jest clossable to zamknie (bez używania finally).
+
+goodPractice:
+• nie tworzyć klas w metodzie, bo i tak nigdzie jej nie użyjemy.
+
+interview:
+• co się dzieje z typem generycznym w runtime? Wykonuje się type rusher i ustawiaja się jako typ Object, ale podczas kompilacji ustawiony jest typ.
+
+intellij:
+• ctrl+alt+c – tworzenie stałej
+

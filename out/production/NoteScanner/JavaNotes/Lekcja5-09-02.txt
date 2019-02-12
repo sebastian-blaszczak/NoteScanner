@@ -1,0 +1,28 @@
+Tags:news,goodPractice,interview,intellij
+
+Lekcja 5 – 09.02;
+
+news:
+• BigDecimals do pieniędzy
+• enumy opisujemy duźymi literami
+• interfejsy używa wtedy gdy nie trzeba niczego przecowywać, do tego używa się klasy abstrakcyjnej
+• w jednym pliku może być tylko jedna klasa public
+• varargs – można wrzucić i tablice i po prostu elementy tego samego typu
+• Po co używać klasy wewnętrzne – np. żeby mieć dostęp do private fields klasy zewnętrznej.
+
+goodPractice:
+• przy enumach nie raczej używać ordinal
+• lepiej używać equals niż ==
+• raczej nie używać protected tylko wyrzucać za pomoca gettera
+• w klasach lepiej używać private
+• overloading w CarUtil
+
+interview:
+• overriding nadpisywanie metod z klasy nad rzędnych a overloading definiowanie metod o tej samej nazwie, ale z innymi argumentami
+• widoczność pakietowa metody jest tylko w danym pakiecie, natomiast chroniony widok metody dostępny jest tylko w klasach dziedziczących
+• dziedziczenie klasy jest tylko po jednej klasie, ale możemy implementować wiele interfejsów w jednej klasie
+• marker interfejs – interfejsy nie mające metody ale będzie serializowalny, meta dana
+
+intellij:
+• znalezienie gdzie została użyta metoda - alt+shift+7
+

@@ -1,0 +1,15 @@
+﻿Tags:goodPractice,news
+
+Lekcja 3 – 02.02;
+
+news:
+• code review – bez spotkania, raczej przeglądanie z kolegą kodu, zanim on wejdzie na produkcje
+• tenary operators – zadanie 1 domowe z min/max (max=max<number ? Number : max)
+• dodatek do array, jak chcemy kopie to trzeba new int[] itd. bo inaczej wskazuje na referencje do tablicy i ja zmienia, ale tez można uzyc Arrays.copyOf();
+• Scanner może służyć tez do plików nie tylko do terminalu.
+
+goodPractice:
+• najlepiej jakby wszystkie pola mogą być private final
+• pola statyczne pisze się DUZYMI_LITERAMI
+• Konwencja klasy: pola immutable, mutable, konstruktor, publiczne, prywatne, getery settery
+

@@ -1,0 +1,36 @@
+﻿Tags:book,news,intellij,goodPractice,interview
+
+Lekcja 1 – 26.01;
+
+book:
+Książka do poczytania – Java. Podstawy, Java. Techniki Zaawansowane
+Książka po kursie – Java. Efektywne Programowanie, Joshua Bloch, Clean Code
+
+news:
+• Swing juz wymarł,
+• JDK – biblioteki, tool, compiler – transferuje do byte code, a następnie do wirtualnej maszyny
+• Po co JVM – java virtual machine – żeby kod był mogą być przenoszony, co oznacza ze może być odtwarzany na każdej maszynie np. Lenovo, mc itd.
+• JIT – Just in time compiler – optymalizacja kodu
+• JRE – runt time enivroment – specyfikacja I toole (pytanie do JRE)
+• Obiektowy - wiadomo
+• Statycznie typowany – int to int, a nie ze się zmienia np. Jak w pythonie
+• Imperatywny – jak ma wykonać (funkcje itp) , a nie co ma wykonać (np. Że chcesz wyciągnąć cos SQL)
+• Usuwa po nas śmieci typu usuwanie obiektów
+• Deklaracje prymitywne zajmowane są na stosie (stack), obiekty są przechowywane na stercie (heap) , natomiast na stosie są referencje które wskazują na wartości obiektu
+• cudzysłów w Stringu \"kot\"
+• Zmiennoprzecinkowe są stratne – nie używa się np. Do pieniędzy
+• char – pojedynczy znak w unicodzie
+
+intellij:
+• psvm – ctrl+space – main
+• sout - ctrl+space – System.print
+• W opisywaniu metod można dodawać odnośniki do wartości
+
+goodPractice:
+• W ciałach metod raczej nie piszemy komentarzy tylko przed metoda
+• Nie komentuje się metod prywatnych.
+
+interview:
+• zawarta w pliku StringBuilder
+• StringBilder a StringBuffer różni się tylko tym ze buffer jest zsynchronizowany z watkami.
+
